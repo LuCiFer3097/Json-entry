@@ -1,0 +1,56 @@
+@charset "UTF-8";*{outline-style:none;margin:0;padding:0}
+img{border:0 none}
+body{font-family:sans-serif;color:#000;font-weight: normal;}
+b,strong{font-weight:700}
+u{text-decoration:underline}
+s{text-decoration:line-through}
+p{margin:0}
+i{font-style:italic}
+big{text-transform:uppercase}
+small{text-transform:lowercase}
+ul li{list-style:none}
+h1,h2,h3,h4,h5,h6{color:#000}
+body{margin: 0;padding: 0;color:#111;float:left;width:100%;background:#363F45;-webkit-font-smoothing: subpixel-antialiased !important;-webkit-backface-visibility: hidden;-moz-backface-visibility: hidden;-ms-backface-visibility: hidden;}
+a:link,a:visited{color:#000;outline:0}
+a:hover{text-decoration:none;}
+
+.main{position:absolute;top:0;lefT:0;righT:0;bottom:0;width:100%;height:100%;display:table;min-width:560px;}
+.main__container{width:100%;display:table-cell;vertical-align:middle;}
+.main--box{position:relative;padding:30px 20px;max-width:920px;height:405px;margin:auto;display:block;overflow: hidden;background:#FFF;border-bottom: 1px solid #0E1D46;}
+.main--box__nav{float:left;width: 96%;margin: 0 2% 10px 2%;float: left;}
+
+.main__box--select{position:relative;float:left;margin:4px 8px 0 0;}
+.select__ico{position:relative;z-index:1;float:left;width:23px;height:23px;background:url(images/menu.png);cursor:pointer;}
+.select__ico.active:after{content: '';position: absolute;top: -5px;left: -5px;righT: -5px;bottom: -5px;border: 1px solid #DBDBDB;display: block;border-radius: 3px;}
+.select__forms{displaY:none;position: absolute;z-index:1;top: 31px;left: -5px;background: #FFF;width: 130px;border: 1px solid #DBDBDB;}
+.select__forms form{padding: 10px;display: block;overflow: hidden;}
+.select__forms label{float:left;width:100%;font-size:11px;}
+.select__forms label+label{margin-top:5px;}
+
+.main__box--form input{float:left;padding:7px 10px;border:1px solid #DBDBDB;margin:0 10px 0 0;}
+.main__box--form p{float:left;font-size:14px;line-height:26px;margin:0 10px 0 0;}
+.main__box--form select{float:left;padding:6px 10px;border:1px solid #DBDBDB;}
+
+.main--box__table{height: 325px;overflow: auto;width: 96%;padding: 0 2%;float: left;}
+.main--box__table table{font-size:13px;width: 100%;border-collapse: collapse;border-collapse: collapse;border-spacing: 0px;border: 1px solid #dbdbdb;}
+.main--box__table table tr{cursor: -webkit-grab;}
+.main--box__table table tr td{padding:10px 8px;}
+.main--box__table table tr + tr td {border-top: 1px solid #dbdbdb;}
+.main--box__table table td {padding: 20px 30px;}
+.main--box__table table td+td {border-left: 1px solid #dbdbdb;}
+.main--box__table table thead{width: 100%;border-bottom: 1px solid #dbdbdb;}
+.main--box__table table thead tr th{text-align:left;padding:10px 8px;cursor:pointer;}
+.main--box__table table thead tr th::after {content: '';position: relative;top: 4px;margin: 0 0 0 7px;border: 5px solid transparent;border-top: 6px solid gainsboro;display: inline-block;transition:.3s;}
+.main--box__table table thead tr th:hover::after{border-top: 6px solid #9C9C9C;}
+.main--box__table table thead tr th.active::after{border-top: 6px solid #9C9C9C;-webkit-transform: rotate(-180deg);-moz-transform: rotate(-180deg);-o-transform: rotate(-180deg);transition:.3s;top: -2px;}
+ 
+.main--box__pagination{position: absolute;bottom: 30px;lefT: 19px;righT: 19px;width: 96%;margin: 0 2%;}
+.main--box__pagination span{width:20px;height:20px;float:left;text-align:center;font-size: 11px;line-height: 20px;border:1px solid #DBDBDB;cursor:pointer;transition:.3s;}
+.main--box__pagination span:hover{background: #E4E4E4;transition:.3s;}
+.main--box__pagination span.active{background: #E4E4E4;transition:.3s;}
+.main--box__pagination span + span{margin-left:10px;}
+
+/* sortable */
+.main--box__table .placeholder{float: left;background: transparent;width: 0;height: 0;position: relative;left: -11px;margin-top: -10px;top: 5px;border-bottom: 5px solid transparent;border-top: 5px solid transparent;border-left: 9px solid #9C9C9C;}
+.main--box__table .dragging, .main--box__table .dragging * {cursor: -webkit-grabbing !important;}
+.main--box__table .dragged{position: absolute;z-index: 200;background:#FFF;cursor: -webkit-grabbing;opacity:.9}

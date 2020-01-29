@@ -1,0 +1,55 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Table</title>  
+	<link rel="stylesheet" href="style.css">	
+	<!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+<body>
+<main class="main">
+	<section class="main__container">
+		<section class="main--box">
+			<div class="main--box__nav">
+				<div class="main__box--select">
+					<i class="select__ico" id="select_field"></i>
+					<span class="select__forms" id="toggle_form">
+						<form>
+							<label><input type="checkbox" value="id" checked> ID </label>
+							<label><input type="checkbox" value="firstName" checked> FirstName </label>
+							<label><input type="checkbox" value="lastName" checked> LastName </label>
+							<label><input type="checkbox" value="email" checked> Email </label>
+							<label><input type="checkbox" value="sdate" checked> Date </label>
+						</form>
+					</span>
+				</div>
+				<form class="main__box--form">
+					<input type="text" id="s" placeholder="Search"/>
+					<p>by</p>
+					<select id="s_field">
+						<option value="id">ID</option>
+						<option value="firstName">FirstName</option>
+						<option value="lastName">LastName</option>
+						<option value="email">Email</option>
+						<option value="sdate">Date</option>
+					</select>
+				</form>
+			</div>
+			<div class="main--box__table">
+				<table id="main__table">
+					<thead id="table-header"></thead>
+					<tbody id="table"></tbody>	
+				</table>
+			</div>
+			<div id="table-pagination" class="main--box__pagination"></div>
+		</section>
+	</section>
+</main>
+
+<script src="js/jquery-1.12.1.min.js"></script>
+<script src="js/jquery-sortable.js"></script>
+<script src="js/core.js"></script>
+<script src="js/script.js"></script>
+
+</body> 
+</html>
